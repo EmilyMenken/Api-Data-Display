@@ -10,16 +10,10 @@ function App() {
   const[NasaData, setNasaData] = React.useState(null);
 
   React.useEffect(() => {
-      fetch("https://sscweb.gsfc.nasa.gov/WS/sscr/2/locations/mms1,mms2/20190101T000000Z,20190101T001000Z/gse,geo?resultFormat=json")
+      fetch("https://api.nasa.gov/planetary/apod?api_key=Ff7gSdIwxswnGuDgkcCG1b47F09pXhgyqtJU2Etn&count=5")
     .then(res => res.json())
-    .then(data => {
-      let Parser = new DOMParser();
-      let xmlDoc = Parser.parserFromString(data, 'text/xml')
-      console.log(xmlDoc)
-    })
+    .then(data => setNasaData(data))
   }, [])
-
-
 
   return (
     <>
