@@ -5,13 +5,14 @@ import Item from './Components/Item.jsx'
 import React from "react";
 
 function NasaData() {
-const[NasaData, setNasaData] = React.useState(null);
-React.useEffect(function() {
+const[NasaData, setNasaData] = useState(null);
+useEffect(() => {
   fetch("https://sscweb.gsfc.nasa.gov/WS/sscr/2/locations")
 .then(res => res.json())
 .then(data => console.log(data))
-setNasaLocationData(data);
-});
+setNasaData(data);
+})
+}, [];
 
 
 function App() {
