@@ -3,6 +3,7 @@ import Header from './Components/Header.jsx'
 import Footer from './Components/Footer.jsx'
 import Item from './Components/Item.jsx'
 import React from "react";
+import location from "./location.json";
 
 function NasaData() {
 const[NasaData, setNasaData] = React.useState(null);
