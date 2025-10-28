@@ -2,12 +2,12 @@ import './App.css'
 import Header from './Components/Header.jsx'
 import Footer from './Components/Footer.jsx'
 import Item from './Components/Item.jsx'
-import React, {useEffect} from "react";
+import React from "react";
 
 function NasaData() {
-const[NasaLocationData, setNasaLocationData] = React.useState(null);
+const[NasaData, setNasaData] = React.useState(null);
 React.useEffect(function() {
-  fetch("https://sscweb.gsfc.nasa.gov/WebServices/REST/json/themisa")
+  fetch("https://sscweb.gsfc.nasa.gov/WS/sscr/2/locations")
 .then(res => res.json())
 .then(data => console.log(data))
 setNasaLocationData(data);
