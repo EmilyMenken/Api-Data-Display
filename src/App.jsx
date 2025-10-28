@@ -5,14 +5,13 @@ import Item from './Components/Item.jsx'
 import React from "react";
 
 function NasaData() {
-const[NasaData, setNasaData] = useState(null);
-useEffect(() => {
-  fetch("https://sscweb.gsfc.nasa.gov/WS/sscr/2/locations")
+const[NasaData, setNasaData] = React.useState(null);
+React.useEffect(() => {
+  fetch("https://sscweb.gsfc.nasa.gov/WS/sscr/2/locations/mms1,mms2/20190101T000000Z,20190101T001000Z/gse,geo/")
 .then(res => res.json())
 .then(data => console.log(data))
-setNasaData(data);
-})
-}, [];
+}, [])
+};
 
 
 function App() {
@@ -20,10 +19,9 @@ function App() {
     <>
       <Header />
       <Item />
+      {NasaData}
       <Footer />
     </>
   )
 }
-
-}
-export default NasaData;
+export default App;
