@@ -61,3 +61,27 @@ header{
     flex-direction: column;
     align-items: center;
 }
+
+header{
+
+    background-color:white;
+    padding:5px;
+
+    border-radius: 50px;
+
+}
+
+.imgData h2{
+
+    margin-bottom: 0px;
+    
+    text-decoration: underline dotted white 4px;
+
+}
+
+.imgData h5{
+
+    padding: 7px;
+    border: 1px solid white;
+
+}
