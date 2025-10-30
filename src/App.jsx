@@ -3,11 +3,9 @@ import Header from './Components/Header.jsx'
 import Footer from './Components/Footer.jsx'
 import Item from './Components/Item.jsx'
 import React from "react";
-import location from "./location.json";
-
 
 function App() {
-  const[NasaData, setNasaData] = React.useState(null);
+  const[NasaData, setNasaData] = React.useState(["Loading..."]);
 
   React.useEffect(() => {
       fetch("https://api.nasa.gov/planetary/apod?api_key=Ff7gSdIwxswnGuDgkcCG1b47F09pXhgyqtJU2Etn&count=5")
