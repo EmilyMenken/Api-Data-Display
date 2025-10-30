@@ -1,22 +1,22 @@
+export default function Item({ data, onNext, onPrev }) {
+  if (!data) return <p>Loading...</p>;
 
-export default function Item({data}) {
-    console.log(data)
-    return (
-        <div className = "imgData">
+  return (
+    <div className="imgData">
+      <h2>{data.title}</h2>
+      <p>{data.date}</p>
 
-            {/* search bar */}
+      <a href={data.url} target="_blank" rel="noreferrer">
+        Click here for a full screen view!
+      </a>
 
-            <h2>{data[0].title}</h2>
-            <p>{data[0].date}</p>
+      <img src={data.url} alt={data.title} />
+      <p>{data.explanation}</p>
 
-            <a href={data[0].url} target="_blank">Click here for a full screen view!</a>
-
-            <img src ={data[0].url}/>
-            <p>{data[0].explanation}</p>
-
-            <button> Skip to next picture </button>
-
-
-        </div>
-    )
+      <div className="buttons">
+        <button onClick={onPrev}>Previous</button>
+        <button onClick={onNext}>Next</button>
+      </div>
+    </div>
+  );
 }
