@@ -1,7 +1,13 @@
 export default function Header() {
     return (
         <>
-            <h1>Nasa Location Data</h1>
+            <h1> NASA Pictures and Location Data</h1>
+
+
+            
+
+
+
         </>
     )
 }
