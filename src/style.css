@@ -2,8 +2,48 @@ html{
 
     background-color: rgb(73, 73, 73);
 
+}
 
+a{
+
+color:black;
+
+padding-bottom:15px;
 
 }
 
+a:hover{
 
+    color:white;
+
+}
+
+header{
+
+    display:flex;
+    justify-content: center;
+
+}
+
+.imgData h2{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.imgData p, a{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.imgData img{
+
+ width:650px;
+
+ display:flex;
+ justify-self: center;
+
+}

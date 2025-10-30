@@ -4,8 +4,6 @@ export default function Item({data}) {
     return (
         <div className = "imgData">
 
-            {/* search bar */}
-
             <h2>{data[0].title}</h2>
             <p>{data[0].date}</p>
 
@@ -15,7 +13,6 @@ export default function Item({data}) {
             <p>{data[0].explanation}</p>
 
             <button> Skip to next picture </button>
-
 
         </div>
     )
