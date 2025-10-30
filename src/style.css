@@ -1,9 +1,63 @@
 html{
-
     background-color: rgb(73, 73, 73);
-
-
-
 }
 
+a{
+    color: black;
+    padding-bottom: 15px;
+}
 
+a:hover{
+    color: white;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.imgData h2{
+    display: flex;
+    justify-content: center;
+}
+
+.imgData h5, a{
+    display: flex;
+    justify-content: center;
+}
+
+.contentRow{
+    display: flex;
+    width: 80%;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.imgs{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.imgs img{
+    width: 100%;
+    max-width: 500px;
+    border-radius: 6px;
+}
+
+.txts{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.txts p{
+    color: white;
+}
+
+.imgData{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
