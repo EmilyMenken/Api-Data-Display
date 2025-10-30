@@ -85,3 +85,27 @@ header{
     border: 1px solid white;
 
 }
+
+.buttons{
+
+    padding-top:30px;
+    
+    display:flex;
+    gap:20px;
+
+}
+
+button{
+
+    padding:15px;
+    border-radius:50px;
+
+}
+
+button:hover{
+
+    background-color:black;
+    color:white;
+
+
+}
